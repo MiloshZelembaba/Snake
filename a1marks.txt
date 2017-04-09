@@ -1,0 +1,49 @@
+CS349 A1 Marking Scheme
+
+TA: William Callaghan
+Email: wrcallag@uwaterloo.ca
+
+
+== Deliverable Requirements [10] ==
+
+5/5 - Makefile exists[1], `make`[2] and `make run`[2] works successfully with default arguments
+
+4/5 - README is included and describes any non-obvious functionality, enhancements and the development environment.
+- should include more dev env info (eg. g++ version)
+
+== Technical Requirements [40]  ==
+
+10/10 - The game displays a splash screen when initially launched [2], with student's name and ID [1], and instructions for gameplay [2]. The application should switch cleanly from the splash screen to the game screen when the game starts [5].
+
+10/10 - The game allows for adjusting the frame rate through a command line argument, from 1-100 [3]. The game runs smoothly for any frame rate option between 25 and 60 FPS [2]. Changing the FPS should not affect the speed at which the snake moves [5] (i.e. At any FPS, the snake should cover the same pixel distance in one second).
+
+10/10 - Key presses and/or mouse events are handled in a timely manner without affecting the repaint interval (i.e. the game should not stutter when handling action events).
+
+5/5 - The game allows for adjusting the speed of the snake through a command line argument, from 1-10, from slowest to fastest [3]. Not specifying the speed during launch should make the snake run with a reasonable default speed value [2]. 
+
+5/5 - Window size is set to 800x600 or something close [3] and should not be resizeable [2].
+
+== Gameplay Requirements [40] ==
+
+5/5 - From the splash screen, the game starts through a key press or a mouse action as specified on the splash screen or README. The snake continuously moves in a direction at a given speed [5].
+
+10/10 - The snake grows in length as it eats the fruit by moving over it [5]. The fruit disappears at the current location and randomly appears at a location inside the canvas not occupied by the snake [5].
+
+5/5 - Arrow keys or WASD (as specified in the README) can be used to control the snake's movement in all directions [3]. The snake should only be able to change its direction by 90 degrees at a time and should only move in the vertical or horizontal direction [2].
+
+5/5 - Collision detection works reasonably well, as the snake can lose lives by colliding with itself or by running into the canvas border [5].
+
+5/5 - The game can be paused/resumed [3], and restarted [2] without relaunching the game. The functionality should be documented in README or on the splash screen.
+
+5/5 - The game shows a game-over screen or returns to the splash screen when the game completes.
+ 
+5/5 - The game displays and updates a score as appropriate.
+
+
+== Enhancements [10] ==
+
+10/10 - Game incorporates one or more enhancements as described in the requirements section.
+
+
+Total:
+99/100
